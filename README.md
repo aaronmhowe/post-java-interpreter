@@ -19,7 +19,7 @@ This is a console application written in the Java programming language, implemen
     - Windows Configuration Guide:
         1. Via Windows File Explorer, navigate to the location in which you've chosen to store the project folder.
         2. Once there, you should see a file named `install_pj.bat`, right-click this file and then click 'Run as Administrator'. If you have a terminal window currently open, you will be prompted to restart it after this step.
-        3. Now open the Windows Search Bar, search for your favorite command-line interface (Powershell, Git Bash, CMD, etc.), and type and enter `pj' to invoke the interpreter.
+        3. Now open the Windows Search Bar, search for your favorite command-line interface (Powershell, Git Bash, CMD, etc.), and type and enter `pj` to invoke the interpreter.
         NOTE: I did not officially test this batch script, as I am running this program via Linux, I apologize for my laziness. Should it not work, Jump over to the traditional method.
     - Unix/Linux Configuration Guide:
         1. Via your system terminal, navigate to the project's root directory via `cd path/to/project`.
