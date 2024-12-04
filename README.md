@@ -25,11 +25,11 @@ This is a console application written in the Java programming language, implemen
         3. Then, to configure the installation script, type and enter `sudo ./install_pj.sh`, and enter your password when prompted.
         4. You can now enter `pj` from any directory in your terminal to invoke the interpretor.
 3. If You Prefer the Traditional Method of Compiling and Running
-    - Unix/Linux:
-        1. Compile: `javac -cp "lib/*" test/*.java src/*.java main/*.java`
-        2. Run: `java -cp "lib/*:main:src:test" Main`
     - Windows:
         1. Compile: `javac -cp "/lib/*" test/*.java src/*.java main/*.java`
         2. RunL `java -cp "lib/*;main;src;test" Main`
+    - Unix/Linux:
+        1. Compile: `javac -cp "lib/*" test/*.java src/*.java main/*.java`
+        2. Run: `java -cp "lib/*:main:src:test" Main`
 ## Lexical & Dynamic Scoping
 By default the interpreter uses dynamic scoping, and you as the user are made aware of what scope the interpreter is using via the prompt `[PJ:D > 0]`, where the character 'D' designates the interpreter is using dynamic scoping. By entering the command `lex`, the interpreter will switch over to lexical scope, and to switch back, simply enter the command `dyn`.
