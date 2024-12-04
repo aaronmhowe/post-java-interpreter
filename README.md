@@ -1,7 +1,4 @@
 # PostJava: Basic PostScript Interpreter
-Aaron Howe
-11635434
-
 This is a console application written in the Java programming language, implementing a PostScript interpreter with its most common and basic operations, categorized as:
 - Stack
 - Arithmetic
