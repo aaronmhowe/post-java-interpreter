@@ -1,0 +1,16 @@
+#!/bin/bash
+
+SCRIPT_PATH=$(readlink -f "$0")
+PROJECT_DIR=$(dirname "$SCRIPT_PATH")
+
+if [ ! -d "${PROJECT_DIR}/bin" ]; then
+    mkdir -p "${PROJECT_DIR}/bin"
+fi
+
+javac -cp "${PROJECT_DIR}/lib/*" -d "${PROJECT_DIR}/bin" "${PROJECT_DIR}"/main/*.java "${PROJECT_DIR}"/src/*.java
+
+if [ $? -eq 0 ]; then
+    java -cp "${PROJECT_DIR}/lib/*:${PROJECT_DIR}/bin:${PROJECT_DIR}/src:${PROJECT_DIR}/src:${PROJECT_DIR}/main" Main
+else
+    echo "Compilation Error"
+fi
